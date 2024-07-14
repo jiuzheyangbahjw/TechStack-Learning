@@ -17,7 +17,7 @@ import javax.annotation.Resource;
    所有的事件消息都要继承这一抽象接口
 
  */
-@Component
+//@Component
 @Slf4j
 public class EventPublisher {
     @Resource

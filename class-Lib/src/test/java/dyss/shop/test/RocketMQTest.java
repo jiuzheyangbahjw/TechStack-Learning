@@ -23,20 +23,20 @@ import java.util.concurrent.CountDownLatch;
 @Slf4j
 public class RocketMQTest {
 
-    @Resource
-    private RocketMQTemplate rocketMQTemplate;
+//    @Resource
+//    private RocketMQTemplate rocketMQTemplate;
 
-    @Resource
-    private EventPublisher eventPublisher;
+//    @Resource
+//    private EventPublisher eventPublisher;
 
-    @Test
-    public void MQSend_Test(){
-        rocketMQTemplate.convertAndSend("DYSS-TOPIC","我是消息");
-        new CountDownLatch(1);
-    }
-
-    @Test
-    public void MQSend2_Test(){
-        eventPublisher.publish(UserBuyEvent.TOPIC, new UserBuyEvent.userMessage());
-    }
+//    @Test
+//    public void MQSend_Test(){
+//        rocketMQTemplate.convertAndSend("DYSS-TOPIC","我是消息");
+//        new CountDownLatch(1);
+//    }
+//
+//    @Test
+//    public void MQSend2_Test(){
+//        eventPublisher.publish(UserBuyEvent.TOPIC, new UserBuyEvent.userMessage());
+//    }
 }
